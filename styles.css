@@ -31,3 +31,18 @@ nav{flex-wrap:wrap;row-gap:8px}.footerlinks a{display:inline-flex;align-items:ce
 .discover-link{display:inline-flex;gap:12px;align-items:center;min-height:44px;font-size:.9375rem;color:var(--muted)}
 .discover-link:hover{color:var(--paper)}
 @media(max-width:380px){.store-button{padding:16px;gap:12px}.store-button .store-arrow{margin-inline-start:0}.store-label strong{font-size:1rem}}
+
+/* Three-language navigation remains usable at narrow widths and large zoom. */
+.header{height:auto;min-height:112px;gap:16px;padding-block:20px;flex-wrap:wrap}
+.header nav{flex-wrap:wrap;gap:12px 24px}
+.languages{display:flex;flex-wrap:wrap;gap:8px}
+.languages .language{padding:8px 12px}
+.language[aria-current=page]{border-color:var(--gold);color:var(--gold)}
+.release-note{font-size:.875rem;color:var(--muted);margin-block:20px}
+html[lang=ru] .hero h1{font-size:clamp(3rem,5.3vw,5.4rem);letter-spacing:-.04em}
+html[lang=ru] .document h1,html[lang=ru] .support h1{overflow-wrap:anywhere}
+@media(max-width:700px){.header nav{flex-basis:100%;gap:8px 20px}.languages{flex-basis:100%}html[lang=ru] .hero h1{font-size:clamp(3rem,12vw,4.5rem)}}
+
+html[lang=ar] .eyebrow,html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3{letter-spacing:normal}
+html[lang=ar] .hero h1{line-height:1.35}
+html[lang=ar] .document h1,html[lang=ar] .support h1{line-height:1.4}
